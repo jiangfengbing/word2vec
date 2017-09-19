@@ -15,6 +15,8 @@ word-analogy : word-analogy.c
 compute-accuracy : compute-accuracy.c
 	$(CC) compute-accuracy.c -o compute-accuracy $(CFLAGS)
 	chmod +x *.sh
+bin2text : bin2text.c
+	$(CC) bin2text.c -o bin2text $(CFLAGS)
 
 clean:
 	rm -rf word2vec word2phrase distance word-analogy compute-accuracy
